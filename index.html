@@ -1,0 +1,26 @@
+<html>
+<head>
+
+<link href="node_modules/leaflet/dist/leaflet.css" rel="stylesheet">
+</head>
+<body ng-app="hello">
+<h1>Proto ES6/Angular</h1>
+
+<!-- Une chtite directvie -->
+<map></map>
+
+<!-- Un controlleur des familles -->
+<div ng-controller="MyController as ctrl">
+    <a ng-click="ctrl.print()">Say hello</a>
+    <input ng-model="hello" type="text"/>
+    <p>
+        {{ hello }}
+    </p>
+</div>
+</body>
+
+<!-- Version webpack, en dev. en prod inclure le bundle -->
+<script src="bundle.js"></script>
+
+<!-- <script src="build/js/bundle.js"></script>-->
+</html>
