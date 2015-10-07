@@ -1,3 +1,5 @@
+import { leaf } from 'leaflet';
+
 export class Map {
     constructor() {
         this.restrict = 'E';

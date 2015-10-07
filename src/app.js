@@ -1,5 +1,4 @@
 import { xor } from 'lodash';
-import { leaf } from 'leaflet';
 import { ng } from 'angular';
 import { MyController } from './MyController';
 import { Map } from './Map';
