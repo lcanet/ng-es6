@@ -2,7 +2,7 @@ var path = require('path');
 var loader = require('babel-loader');
 
 module.exports = {
-    entry: './src/run2.js',
+    entry: './src/app.js',
     output: {
         path: __dirname,
         filename: 'bundle.js'

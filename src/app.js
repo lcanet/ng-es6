@@ -1,6 +1,11 @@
-export class MyClass {
+import { xor } from 'lodash';
+import { leaf } from 'leaflet';
+import { ng } from 'angular';
+import { MyController } from './MyController';
+import { Map } from './Map';
 
-    print() {
-        console.log('Salut grand de merde con');
-    }
-}
+angular.module('hello', [])
+    .controller('MyController', MyController)
+    .directive('map', () => { return new Map() } )
+;
+

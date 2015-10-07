@@ -4,11 +4,9 @@ export class MyController {
     constructor($scope) {
         this.$scope = $scope;
         $scope.hello = 'Hello world';
-
     };
 
     print() {
         alert(this.$scope.hello);
-
     }
 }
